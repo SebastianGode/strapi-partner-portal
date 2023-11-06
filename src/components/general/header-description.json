@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_general_header_descriptions",
+  "info": {
+    "displayName": "header_description",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

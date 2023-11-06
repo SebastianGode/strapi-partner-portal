@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "features",
+  "collectionName": "quotes",
   "info": {
-    "singularName": "feature",
-    "pluralName": "features",
-    "displayName": "2_features",
+    "singularName": "quote",
+    "pluralName": "quotes",
+    "displayName": "4_quotes",
     "description": ""
   },
   "options": {
@@ -16,13 +16,12 @@
     }
   },
   "attributes": {
-    "media": {
+    "profile_picture": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ],
       "pluginOptions": {
         "i18n": {
@@ -30,16 +29,7 @@
         }
       }
     },
-    "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text",
-      "required": true
-    },
-    "headline": {
+    "quotation_footer": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -48,11 +38,19 @@
       "type": "string",
       "required": true
     },
-    "partner": {
+    "quotation": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "partners": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::partner.partner",
-      "inversedBy": "features"
+      "mappedBy": "quotes"
     }
   }
 }

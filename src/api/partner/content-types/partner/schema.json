@@ -4,7 +4,7 @@
   "info": {
     "singularName": "partner",
     "pluralName": "partners",
-    "displayName": "partners",
+    "displayName": "1_partners",
     "description": ""
   },
   "options": {
@@ -16,16 +16,7 @@
     }
   },
   "attributes": {
-    "partner_id": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "uid",
-      "required": true
-    },
-    "headline_1": {
+    "overview_headline": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -34,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "description_1": {
+    "overview_description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -43,15 +34,12 @@
       "type": "text",
       "required": true
     },
-    "image_1": {
+    "overview_media": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "pluginOptions": {
         "i18n": {
@@ -59,7 +47,7 @@
         }
       }
     },
-    "description_2": {
+    "teaser_description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -79,6 +67,71 @@
       "relation": "oneToMany",
       "target": "api::feature.feature",
       "mappedBy": "partner"
+    },
+    "partner_id": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "teaser_headline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "teaser_media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "overview_product_type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "overview_company_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "overview_website": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "quotes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quote.quote",
+      "inversedBy": "partners"
     }
   }
 }

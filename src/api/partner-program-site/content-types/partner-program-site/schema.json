@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "partner_program_sites",
+  "info": {
+    "singularName": "partner-program-site",
+    "pluralName": "partner-program-sites",
+    "displayName": "partner_program_site"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    }
+  }
+}

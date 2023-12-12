@@ -10,11 +10,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@chordata-insight/strapi-plugin-sso": "github:SebastianGode/strapi-plugin-sso",
     "@strapi/plugin-i18n": "4.14.6",
     "@strapi/plugin-users-permissions": "4.14.6",
     "@strapi/strapi": "4.14.6",
-    "pg": "8.11.3"
+    "pg": "8.11.3",
+    "strapi-plugin-sso": "^0.4.2"
   },
   "author": {
     "name": "A Strapi developer"
@@ -23,7 +23,7 @@
     "uuid": "5451f709-95e9-4bc4-9c79-d3fcaa38f00c"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=14.19.1",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

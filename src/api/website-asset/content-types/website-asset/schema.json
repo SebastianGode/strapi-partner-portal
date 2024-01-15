@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_assets",
+  "info": {
+    "singularName": "website-asset",
+    "pluralName": "website-assets",
+    "displayName": "website_assets",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}
